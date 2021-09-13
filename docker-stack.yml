@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  webserver:
+    image: docker.io/tirthankar17/dca-edureka:certprojectapp 
+    ports:
+      - "8080"
+    restart: always
+    network_mode: overlay 
+    volumes:
+      - appVolume:/var/log/
+    deploy:
+      replicas: 5
+volumes:
+  appVolume:
+    external: true

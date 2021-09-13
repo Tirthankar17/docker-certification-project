@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  webserver:
+    image: tirthankar17/dca-edureka:casestudy2app 
+    ports:
+      - "80"
+    restart: always
+    network_mode: bridge
+    volumes:
+      - appVolume:/usr/local/apache2/logs/
+volumes:
+  appVolume:
+    external: true
