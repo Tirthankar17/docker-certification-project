@@ -3,7 +3,7 @@ services:
   webserver:
     image: tirthankar17/dca-edureka:certprojectapp 
     ports:
-      - "8080"
+      - "8080:8080"
     restart: always
     network_mode: bridge
     volumes:
