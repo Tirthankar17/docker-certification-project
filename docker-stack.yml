@@ -3,7 +3,7 @@ services:
   webserver:
     image: docker.io/tirthankar17/dca-edureka:certprojectapp 
     ports:
-      - "8080"
+      - "8080:8080"
     networks:
       - webserver_network
     volumes:
